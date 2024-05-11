@@ -1,6 +1,9 @@
 import Hero from "@/components/Hero";
+import Offer from "@/components/Offer";
+import Partners from "@/components/Partners";
+import Whitepaper from "@/components/Whitepaper";
+import WhyChem from "@/components/WhyChem";
 import { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Chemotronix | Home",
@@ -11,6 +14,12 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-   <Hero />
+    <main>
+      <Hero />
+      <WhyChem />
+      <Offer />
+      <Whitepaper />
+      <Partners />
+    </main>
   );
 }

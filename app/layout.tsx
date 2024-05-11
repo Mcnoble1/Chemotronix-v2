@@ -1,9 +1,11 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+const benord = localFont({ src: '../public/fonts/Benord.otf' })
 
 export const metadata: Metadata = {
   title: "Chemotronix",
@@ -15,6 +17,7 @@ const links = [
   { href: "/about", label: "About" },
   { href: "/projects", label: "Projects" },
   { href: "/contact", label: "Contact" },
+  { href: "/calculator", label: "Calculator" },
 ];
 
 export default function RootLayout({
@@ -24,9 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">    
-      <body className={inter.className}>
+      <body className={benord.className}>
         <header>
-          <nav>
+          {/* <nav>
             <ul className="flex items-center">
               {links.map(({ href, label }) => (
                 <li key={href} className="mr-6">
@@ -36,9 +39,10 @@ export default function RootLayout({
                 </li>
               ))}
             </ul>
-          </nav>
+          </nav> */}
         </header>
         {children}
+        <Footer />
       </body>
     </html>
   );
