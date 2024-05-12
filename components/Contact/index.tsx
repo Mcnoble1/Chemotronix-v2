@@ -1,6 +1,6 @@
 const Contact = () => {
     return (
-        <section className="contact">
+        <section className="h-screen">
         <div className="container">
             <div className="contact__content">
             <div className="contact__info">

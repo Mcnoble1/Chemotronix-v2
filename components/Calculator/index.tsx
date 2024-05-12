@@ -1,8 +1,8 @@
 const Calculator = () => {
     return (
-        <div>
+        <section className="h-screen">
         <h1>Calculator</h1>
-        </div>
+        </section>
     );
 };
 

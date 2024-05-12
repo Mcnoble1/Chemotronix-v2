@@ -1,6 +1,6 @@
 const Team = () => {
     return (
-        <section className="team-area ptb-100">
+        <section className="h-screen">
         <div className="container">
             <div className="section-title">
             <h2>Our Team</h2>
