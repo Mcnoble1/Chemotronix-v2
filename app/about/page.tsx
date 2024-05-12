@@ -1,7 +1,11 @@
+import About from "@/components/About";
+import Team from "@/components/Team";
+
 const AboutPage = () => {
     return (
         <div>
-            <h1>About Page</h1>
+            <About />
+            <Team />
         </div>
     )
 }
