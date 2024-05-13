@@ -1,127 +1,48 @@
+import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const Team = () => {
     return (
-        <section className="h-screen">
-        <div className="container">
-            <div className="section-title">
-            <h2>Our Team</h2>
-            <div className="bar"></div>
-            <p>Meet the people who make awesome stuffs</p>
+        <section className="h-fit w-screen py-10 bg-[#FFFED4]">
+            <h1 className='text-3xl text-center mb-10'>Amazing People of Chemotronix </h1>
+            <div className="grid grid-cols-3 ml-[8%] w-[90%]">
+                <div className="mb-10" >
+                    <Image src="/images/offer1.png" alt="Offer 1" className="mb-5" width={300} height={300} />
+                    <h1 className="mb-1 text-lg font-medium">Peace Bello</h1>
+                    <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
+                    <p className="text-sm">CEO</p>
+                </div>        
+                <div className="mb-10" >
+                    <Image src="/images/offer2.png" alt="Offer 2" className="mb-5" width={300} height={300} />
+                    <h1 className="mb-1 text-lg">John Doe</h1>
+                    <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
+                    <p className="text-sm">CTO</p>
+                </div>
+                <div className="mb-10" >
+                    <Image src="/images/offer3.png" alt="Offer 3" className="mb-5" width={300} height={300} />
+                    <h1 className="mb-1 text-lg font-medium">Jane Doe</h1>
+                    <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
+                    <p className="text-sm">COO</p>
+                </div>
+                <div className="mb-10" >
+                    <Image src="/images/offer1.png" alt="Offer 1" className="mb-5" width={300} height={300} />
+                    <h1 className="mb-1 text-lg font-medium">Peace Bello</h1>
+                    <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
+                    <p className="text-sm">CEO</p>
+                </div>        
+                <div className="mb-10" >
+                    <Image src="/images/offer2.png" alt="Offer 2" className="mb-5" width={300} height={300} />
+                    <h1 className="mb-1 text-lg">John Doe</h1>
+                    <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
+                    <p className="text-sm">CTO</p>
+                </div>
+                <div className="mb-10" >
+                    <Image src="/images/offer3.png" alt="Offer 3" className="mb-5" width={300} height={300} />
+                    <h1 className="mb-1 text-lg font-medium">Jane Doe</h1>
+                    <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
+                    <p className="text-sm">COO</p>
+                </div>                        
             </div>
-    
-            <div className="row">
-            <div className="col-lg-3 col-md-6">
-                <div className="single-team">
-                <div className="team-image">
-                    <img src="/images/team-image/1.jpg" alt="image" />
-    
-                    <div className="social">
-                    <ul>
-                        <li>
-                        <a href="#" target="_blank">
-                            <i className="fab fa-facebook-f"></i>
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" target="_blank">
-                            <i className="fab fa-twitter"></i>
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" target="_blank">
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" target="_blank">
-                            <i className="fab fa-linkedin"></i>
-                        </a>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-    
-                <div className="team-content">
-                    <h3>John Smith</h3>
-                    <span>CEO & Founder</span>
-                </div>
-                </div>
-            </div>
-    
-            <div className="col-lg-3 col-md-6">
-                <div className="single-team">
-                <div className="team-image">
-                    <img src="/images/team-image/2.jpg" alt="image" />
-    
-                    <div className="social">
-                    <ul>
-                        <li>
-                        <a href="#" target="_blank">
-                            <i className="fab fa-facebook-f"></i>
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" target="_blank">
-                            <i className="fab fa-twitter"></i>
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" target="_blank">
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" target="_blank">
-                            <i className="fab fa-linkedin"></i>
-                        </a>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-
-                <div className="team-content">
-                    <h3>David Warner</h3>
-                    <span>Web Developer</span>
-                </div>
-                </div>
-            </div>
-
-                <div className="single-team">
-                <div className="team-image">
-                    <img src="/images/team-image/3.jpg" alt="image" />
-    
-                    <div className="social">
-                    <ul>
-                        <li>
-                        <a href="#" target="_blank">
-                            <i className="fab fa-facebook-f"></i>
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" target="_blank">
-                            <i className="fab fa-twitter"></i>
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" target="_blank">
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" target="_blank">
-                            <i className="fab fa-linkedin"></i>
-                        </a>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-    
-                <div className="team-content">
-                    <h3>Steven Smith</h3>
-                    <span>Web Designer</span>
-                </div>
-                </div>
-            </div>
-        </div>
         </section>
     );
 }
