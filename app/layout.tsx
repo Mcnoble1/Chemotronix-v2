@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en">    
       <body className={benord.className}>
         <header>
-          {/* <nav>
+          <nav>
             <ul className="flex items-center">
               {links.map(({ href, label }) => (
                 <li key={href} className="mr-6">
@@ -42,7 +42,7 @@ export default function RootLayout({
                 </li>
               ))}
             </ul>
-          </nav> */}
+          </nav>
         </header>
         {children}
         <Footer />
