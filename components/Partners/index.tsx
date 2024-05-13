@@ -1,7 +1,7 @@
 import Image from 'next/image';
 const Partners = () => {
     return (
-        <section className="h-screen flex flex-col mt-10 mx-16">
+        <section className="h-fit flex flex-col mt-10 mx-16">
             <div className="flex w-full flex-row mb-5">
                 <p className="w-[10%]">Our Partners</p>
                 <hr className="h-[1px] w-[90%] bg-black mt-3"/>
