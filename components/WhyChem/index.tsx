@@ -3,8 +3,8 @@ import { faLeaf, faSolarPanel, faBriefcase, faTractor } from '@fortawesome/free-
 
 const WhyChem = () => {
   return (
-    <section className="h-screen">
-      <div className="mx-20 my-10 h-[70%] bg-[#01431D] rounded-3xl p-10">
+    <section className="h-fit mb-20">
+      <div className="mx-20 my-20 h-[70%] bg-[#01431D] rounded-3xl p-10">
         <h1 className="text-[#FFFED4] text-4xl font-bold pb-10">Why Chemotronix?</h1>
         <div className="flex flex-row flex-wrap gap-5">
             <div className='w-1/2'>
