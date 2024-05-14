@@ -3,9 +3,13 @@ const About = () => {
     return (
         <div>
             <section className="h-screen text-center flex flex-col items-center justify-center bg-[#FFFED4]">
-            <div className='px-[20%]'>
+            <div className=''>
                 <h1 className="text-6xl mb-10 text-black">Embracing Change is what we do at <span className='text-[#01431D]'>Chemotronix</span></h1>
-                <Image src="/images/offer1.png" alt="Offer 1" className="mb-5 align-center" width={300} height={300}/>
+            </div>
+            <div className="flex flex-row">
+                <Image src="/images/about1.png" alt="About 1" className="mb-5" width={150} height={150}/>
+                <Image src="/images/about2.png" alt="About 1" className="mb-5" width={150} height={150}/>
+                <Image src="/images/about3.png" alt="About 1" className="mb-5" width={150} height={150}/>
             </div>
             </section>
             <section className="h-screen bg-[#01431D] text-center text-white flex flex-col items-center justify-center">
