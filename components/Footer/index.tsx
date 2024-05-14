@@ -1,7 +1,7 @@
 import Image from 'next/image';
 const Footer = () => {
     return (
-        <footer className="h-screen w-full mt-10 pt-10 px-10 gap-[10%] bg-[#01431D] flex flex-row flex-wrap ">
+        <footer className="h-screen w-full pt-10 px-10 gap-[10%] bg-[#01431D] flex flex-row flex-wrap ">
             <div className="w-2/5">
                 <h1 className="text-[#FFFED4] text-3xl">Stay in the loop with the cool things we are doing.</h1>
                 <p className="text-white">Subscribe to our newsletter</p>
