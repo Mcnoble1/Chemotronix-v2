@@ -8,20 +8,17 @@ const Contact = () => {
                 <p className="contact__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies, libero et mattis lacinia, nunc purus porta ex, ac consectetur sapien nunc quis odio.</p>
                 <div className="contact__details">
                 <div className="contact__detail">
-                    <img src="/images/phone.svg" alt="Phone" />
                     <div>
                     <h3>Phone</h3>
                     <p>+1 234 567 890</p>
                     </div>
                 </div>
                 <div className="contact__detail">
-                    <img src="/images/email.svg" alt="Email" />
                     <div>
                     <h3>Email</h3>
                     </div>
                 </div>
                 <div className="contact__detail">
-                    <img src="/images/location.svg" alt="Location" />
                     <div>
                     <h3>Location</h3>
                     <p>123 Street, New York, USA</p>

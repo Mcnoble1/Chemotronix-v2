@@ -5,7 +5,6 @@ const links = [
     { href: "/about", label: "About" },
     { href: "/projects", label: "Projects" },
     { href: "/contact", label: "Contact" },
-    { href: "/calculator", label: "Calculator" },
   ];  
 
 const Navbar = () => {
@@ -26,7 +25,7 @@ const Navbar = () => {
                 </div>
                 
                 <button className="uppercase text-xs rounded-full p-3 bg-[#01431D] border-8 border-green-900">
-                    Carbon Calculator
+                    <a href="/calculator">Carbon Calculator</a>
                 </button>
             </div>
             
