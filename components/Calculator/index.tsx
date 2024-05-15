@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 
 const Calculator = () => {
@@ -41,7 +41,9 @@ const Calculator = () => {
                 <>
                     <div>
                         <h1 className="text-6xl text-white mb-5">Carbon Footprint Calculator.</h1>
-                        <button onClick={handleStartCalculating} className="text-2xl rounded-2xl p-4 text-[#01431D]  bg-[#FFFED4]">Start Calculating</button> 
+                        <button onClick={handleStartCalculating} className="text-2xl rounded-2xl p-4 text-[#01431D]  bg-[#FFFED4]">Start Calculating
+                        <FontAwesomeIcon icon={faArrowRight} className="text-[#01431D] text-2xl ml-5" />
+                        </button> 
                     </div>
 
                     <div className="rounded-lg bg-[#01431D]/60 h-fit p-10 text-white">
@@ -49,16 +51,16 @@ const Calculator = () => {
                     </div>
                 </>
                 ) : (
-                    <div className="rounded-lg flex flex-col bg-[#01431D]/60 h-fit p-10 text-white">
+                    <div className="rounded-lg flex flex-col bg-[#01431D]/60 h-fit w-[80%] mt-[10%] p-10 text-white">
                     <div className="flex items-center mb-5">
                         {currentQuestion >= 1 && (
                             <button onClick={handleBack} className="mr-3">
                                 <FontAwesomeIcon icon={faArrowLeft} />
                             </button>
                          )}
-                        <h1 className="text-3xl flex-grow">{questions[currentQuestion]}</h1>
+                        <h1 className="text-3xl flex-grow text-center mb-5">{questions[currentQuestion]}</h1>
                     </div>
-                    <input type="text" placeholder="Type something here..." className="bg-transparent border mb-5 rounded-lg outline-none p-4" />
+                    <input type="text" placeholder="Type something here..." className="bg-transparent border mb-10 rounded-lg outline-none p-4" />
                     {currentQuestion < questions.length - 1 && (
                         <button onClick={handleNext} className="bg-[#FFFED4] p-3 mb-5  text-[#01431D] rounded-xl w-[30%] mx-[35%]">Next</button>
                     )}
