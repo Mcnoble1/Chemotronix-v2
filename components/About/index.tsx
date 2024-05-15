@@ -2,7 +2,7 @@ import Image from 'next/image';
 const About = () => {
     return (
         <div>
-            <section className="h-screen text-center flex flex-col items-center justify-center bg-[#FFFED4]">
+            <section className="h-screen text-center flex flex-col items-center justify-center pt-20 bg-[#FFFED4]">
             <div className=''>
                 <h1 className="text-6xl mb-10 text-black">Embracing Change is what we do at <span className='text-[#01431D]'>Chemotronix</span></h1>
             </div>
