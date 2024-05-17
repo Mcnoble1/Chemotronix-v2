@@ -6,7 +6,7 @@ const Offer = () => {
                 <p className="w-[10%]">What we offer</p>
                 <hr className="h-[1px] w-[90%] bg-black mt-3"/>
             </div>
-            <div className="grid grid-cols-3 gap-16">
+            <div className="grid lg:grid-cols-3 gap-16">
                 <div>
                     <Image src="/images/offer1.png" alt="Offer 1" className="mb-5" width={300} height={300} />
                     <h1 className="mb-1 text-lg font-medium">Carbon Credit Platform</h1>

@@ -36,7 +36,7 @@ const Calculator = () => {
 
     return (
         <section className="h-screen bg-[url('/images/calc.png')] bg-cover bg-center">
-            <div className=' bg-black/70 h-screen px-[10%] gap-[30%] flex flex-row items-center justify-center'>
+            <div className=' bg-black/70 h-screen px-[10%] gap-[10%] lg:gap-[25%] flex flex-col lg:flex-row items-center justify-center'>
                 {!showQuestions ? (
                 <>
                     <div>
