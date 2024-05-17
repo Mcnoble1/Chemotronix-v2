@@ -3,8 +3,8 @@ const Offer = () => {
     return (
         <section className="h-fit flex flex-col mx-16 mb-20">
             <div className="flex w-full flex-row mb-5">
-                <p className="w-[10%]">What we offer</p>
-                <hr className="h-[1px] w-[90%] bg-black mt-3"/>
+                <p className="lg:w-[10%]">What we offer</p>
+                <hr className="h-[1px] ml-2 w-[55%] lg:w-[90%] bg-black mt-3"/>
             </div>
             <div className="grid lg:grid-cols-3 gap-16">
                 <div>

@@ -51,7 +51,7 @@ const Calculator = () => {
                     </div>
                 </>
                 ) : (
-                    <div className="rounded-lg flex flex-col bg-[#01431D]/60 h-fit w-[80%] mt-[10%] p-10 text-white">
+                    <div className="rounded-lg flex flex-col bg-[#01431D]/60 h-fit w-[100%] lg:w-[80%] mt-[10%] p-10 text-white">
                     <div className="flex items-center mb-5">
                         {currentQuestion >= 1 && (
                             <button onClick={handleBack} className="mr-3">
