@@ -5,7 +5,7 @@ const Team = () => {
     return (
         <section className=" py-10 bg-[#FFFED4]">
             <h1 className='text-3xl text-center mb-10'>Amazing People of Chemotronix </h1>
-            <div className="grid lg:grid-cols-3 grid-cols-1 ml-[13%] lg:ml-[8%] w-[90%]">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 ml-[13%] lg:ml-[8%] w-[90%]">
                 <div className="mb-10" >
                     <Image src="/images/peace.jpg" alt="Offer 1" className="mb-5 rounded-2xl" width={300} height={300} />
                     <h1 className="mb-1 text-lg font-medium">Peace Bello</h1>
