@@ -6,7 +6,7 @@ const WhyChem = () => {
     <section className="h-fit mb-20">
       <div className="mx-10 lg:mx-20 my-20 h-[70%] bg-[#01431D] rounded-3xl p-10">
         <h1 className="text-[#FFFED4] text-2xl lg:text-4xl font-bold pb-10">Why Chemotronix?</h1>
-        <div className="flex w-full flex-col lg:flex-row flex-wrap gap-10">
+        <div className="flex w-full flex-col md:flex-row lg:flex-row flex-wrap gap-10">
             <div className='lg:w-2/5'>
                 <h1 className="text-[#FFFED4] text-xl font-bold">
                   <FontAwesomeIcon icon={faSolarPanel} /> Energy Investment
