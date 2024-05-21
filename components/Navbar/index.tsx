@@ -44,6 +44,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { useGSAP } from '@gsap/react';
+import gsap from "gsap";
 
 const links = [
     { href: "/", label: "Home" },
@@ -55,11 +57,29 @@ const links = [
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    useGSAP(() => {
+        gsap.from("#navlist", {
+            duration: 2,
+            delay: 1,
+            x: -400,
+            opacity: 1,
+            ease: "power4.out",
+            stagger: 0.5
+        })
+        gsap.from("#calc-btn", {
+            duration: 2,
+            delay: 1.5,
+            x: 200,
+            opacity: 1,
+            ease: "power4.out"
+        })
+    }, []);
+
     return (
         <nav className="absolute w-full bg-transparent top-5 p-5 text-white">
             <div className="flex flex-row justify-between">
                 <div className="flex items-center">
-                    <div className="flex items-center rounded-full p-2 bg-[#01431D] border-8 border-green-900">
+                    <div id="navlist" className="flex items-center rounded-full p-2 bg-[#01431D] border-8 border-green-900">
                         <Image src="/images/logo.png" alt="logo" width={50} height={50} />
                     
                     <div className="hidden md:block ml-5">
@@ -77,7 +97,7 @@ const Navbar = () => {
                 </div>
                 
                 <div className="flex items-center">
-                    <button className="uppercase text-xs rounded-full p-4 bg-[#01431D] border-8 border-green-900 mr-4">
+                    <button id="calc-btn" className="uppercase text-xs rounded-full p-4 bg-[#01431D] border-8 border-green-900 mr-4">
                         <Link href="/calculator">
                             Carbon Calculator
                         </Link>
