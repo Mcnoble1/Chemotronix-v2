@@ -7,16 +7,16 @@ import { useGSAP } from '@gsap/react';
 const Hero = () => {
     useGSAP(() => {
         gsap.from("#hero", {
-            duration: 2,
+            duration: 5,
             delay: 1,
             y: -300,
             opacity: 1,
-            ease: "power4.out",
+            ease: "elastic",
             stagger: 0.5
         })
         gsap.from("#calc", {
-            duration: 2,
-            delay: 1.5,
+            duration: 5,
+            delay: 1,
             y: 300,
             opacity: 1,
             ease: "power4.out"

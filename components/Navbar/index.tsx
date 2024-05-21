@@ -59,16 +59,16 @@ const Navbar = () => {
 
     useGSAP(() => {
         gsap.from("#navlist", {
-            duration: 2,
+            duration: 5,
             delay: 1,
             x: -400,
             opacity: 1,
-            ease: "power4.out",
+            ease: "elastic",
             stagger: 0.5
         })
         gsap.from("#calc-btn", {
-            duration: 2,
-            delay: 1.5,
+            duration: 5,
+            delay: 1,
             x: 200,
             opacity: 1,
             ease: "power4.out"
