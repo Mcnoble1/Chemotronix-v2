@@ -9,23 +9,22 @@ const Hero = () => {
         gsap.from("#hero", {
             duration: 5,
             delay: 1,
-            y: -300,
+            y: -600,
             opacity: 1,
             ease: "elastic",
-            stagger: 0.5
         })
         gsap.from("#calc", {
             duration: 5,
             delay: 1,
-            y: 300,
+            y: 400,
             opacity: 1,
-            ease: "power4.out"
+            ease: "elastic"
         })
     }, []);
     return (
         <section className="h-screen bg-[url('/images/hero.png')] bg-cover bg-center">
             <div className=' bg-black/70 h-screen px-[20%] flex flex-col items-center justify-center'>
-                <h1 id="hero" className="text-6xl text-white mb-10 text-center">Changing the world one emission at a time.</h1>
+                <h1 id="hero" className="text-6xl text-white mb-10 text-center opacity-1">Changing the world one emission at a time.</h1>
                 <button className="text-2xl text-[#FFFED4]" id="calc">
                     <a href="/calculator">
                         Calculate Emissions 
