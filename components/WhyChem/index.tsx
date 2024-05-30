@@ -1,10 +1,30 @@
+'use client'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLeaf, faSolarPanel, faBriefcase, faTractor } from '@fortawesome/free-solid-svg-icons'
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/all";
 
 const WhyChem = () => {
+
+gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(() => {
+    gsap.from("#container", {
+      scrollTrigger: {
+        trigger: "#container",
+        start: "top center",
+        toggleActions: "restart none none none"
+      },
+      duration: 2,
+      x: 600,
+      ease: "power2.inOut"
+    })
+    }, []);
+
   return (
-    <section className="h-fit mb-20">
-      <div className="mx-10 lg:mx-20 my-20 h-[70%] bg-[#01431D] rounded-3xl p-10">
+    <section className="h-fit mb-20" id='container'>
+      <div className="mx-10 lg:mx-20 my-20 h-[70%] bg-[#01431D] rounded-3xl p-10" id='container'>
         <h1 className="text-[#FFFED4] text-2xl lg:text-4xl font-bold pb-10">Why Chemotronix?</h1>
         <div className="flex w-full flex-col md:flex-row lg:flex-row flex-wrap gap-10">
             <div className='lg:w-2/5'>

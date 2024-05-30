@@ -1,3 +1,5 @@
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
 const Contact = () => {
     return (
         <section className="h-screen">

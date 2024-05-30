@@ -1,6 +1,8 @@
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
 const Footer = () => {
     return (
         <footer className="absolute h-screen w-full pt-10 px-10 gap-[10%] bg-[#01431D] flex flex-col lg:flex-row flex-wrap ">

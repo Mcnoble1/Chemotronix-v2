@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
 const About = () => {
     return (
         <div>

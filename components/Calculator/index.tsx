@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
 
 const Calculator = () => {
     const [showQuestions, setShowQuestions] = useState(false);
