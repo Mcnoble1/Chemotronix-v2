@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Marquee from "react-fast-marquee";
+
 const Partners = () => {
     return (
         <section className="h-fit flex flex-col mb-10 mt-10 mx-2 lg:mx-16">
@@ -6,20 +8,22 @@ const Partners = () => {
                 <p className="w-[10%]">Our Partners</p>
                 <hr className="h-[1px] w-[90%] bg-black mt-3"/>
             </div>
-            <div className="grid grid-cols-4 gap-5 ">
+            <Marquee speed={50}>
+            <div className="grid grid-cols-4 gap-10 ">
                 <div>
-                    <Image src="/images/polygon.svg" alt="Offer 1" className="mb-5" width={150} height={150} />
+                    <Image src="/images/polygon.svg" alt="Offer 1" className="mb-5" width={250} height={150} />
                 </div>
                 <div>
-                    <Image src="/images/chainlink.svg" alt="Offer 2" className="mb-5" width={150} height={150} />
+                    <Image src="/images/chainlink.svg" alt="Offer 2" className="mb-5" width={250} height={150} />
                 </div>
                 <div>
-                    <Image src="/images/microsoft.svg" alt="Offer 3" className="mb-5" width={150} height={150} />
+                    <Image src="/images/microsoft.svg" alt="Offer 3" className="mb-5" width={250} height={150} />
                 </div>
                 <div>
-                    <Image src="/images/filecoin.svg" alt="Offer 3" className="mb-5" width={150} height={150} />
+                    <Image src="/images/filecoin.svg" alt="Offer 3" className="mb-5" width={250} height={150} />
                 </div>
             </div>
+            </Marquee>
         </section>
     )
 }

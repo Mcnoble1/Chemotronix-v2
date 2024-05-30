@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
 const Team = () => {
     return (
         <section className=" py-10 bg-[#FFFED4]">
