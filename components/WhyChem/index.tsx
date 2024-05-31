@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
     gsap.from("#container", {
       scrollTrigger: {
         trigger: "#container",
-        start: "top center",
+        // start: "top center",
         toggleActions: "restart none none none"
       },
       duration: 2,
