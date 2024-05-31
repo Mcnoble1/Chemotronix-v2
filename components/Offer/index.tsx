@@ -12,7 +12,7 @@ const Offer = () => {
         gsap.from("#cont", {
           scrollTrigger: {
             trigger: "#cont",
-            start: "top center",
+            // start: "top center",
             toggleActions: "restart none none none"
           },
           duration: 2,

@@ -15,7 +15,7 @@ const Whitepaper = () => {
         }, {
             scrollTrigger: {
                 trigger: "#contain",
-                start: "top center",
+                // start: "top center",
                 toggleActions: "restart pause reverse pause"
                 },
           duration: 2,
