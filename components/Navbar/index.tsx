@@ -146,7 +146,7 @@ const Navbar = () => {
                         <ul className="flex flex-row items-center">
                             {links.map(({ href, label }) => (
                                 <li key={href} className="mr-6 text-xs uppercase">
-                                    <Link href={href} onClick={label === "Ask AI" ? (e) => { e.preventDefault(); toggleSidebar(); } : null}>
+                                    <Link href={href} onClick={label === "Ask AI" ? (e) => { e.preventDefault(); toggleSidebar(); } : undefined}>
                                         {label}
                                     </Link>
                                 </li>
@@ -175,7 +175,7 @@ const Navbar = () => {
                     <ul className="flex flex-col items-center bg-[#01431D] rounded-lg p-5 border-8 border-green-900">
                         {links.map(({ href, label }) => (
                             <li key={href} className="mb-4 text-xs uppercase">
-                                <Link href={href} onClick={label === "Ask AI" ? (e) => { e.preventDefault(); toggleSidebar(); } : null}>
+                                <Link href={href} onClick={label === "Ask AI" ? (e) => { e.preventDefault(); toggleSidebar(); } : undefined}>
                                     {label}
                                 </Link>
                             </li>
