@@ -185,7 +185,7 @@ const Navbar = () => {
             )}
         </nav>
         {isSidebarOpen && (
-                <div className="fixed right-0 h-screen border-l border-lg w-full lg:w-[33%] text-white z-50 bg-opacity-50">
+                <div className="fixed right-0 h-screen border-l border-lime-800 w-full lg:w-[33%] text-white z-50 bg-opacity-50">
                     <div className="bg-[#01431D] h-screen p-5 flex flex-col">
                         <div className="flex justify-end">
                             <button     
