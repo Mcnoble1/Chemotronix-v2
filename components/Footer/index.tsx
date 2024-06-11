@@ -60,7 +60,7 @@ const Footer = () => {
                     <FontAwesomeIcon 
                         icon={faArrowRight} 
                         onClick={handleSubmit}
-                        className="text-[#FFFED4] text-2xl absolute top-5 right-5 bottom-0  m-auto mr-3" 
+                        className="text-[#FFFED4] text-2xl hover:translate-x-1 absolute top-5 right-5 bottom-0  m-auto mr-3" 
                     />
                 </div>
             </div>
