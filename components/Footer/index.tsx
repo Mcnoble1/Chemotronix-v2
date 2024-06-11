@@ -11,7 +11,7 @@ const Footer = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (e: any) => {
         const { name, value } = e.target;
     
          if (name === 'FNAME' ) {
@@ -25,7 +25,7 @@ const Footer = () => {
       };
 
 
-      const handleSubmit = async (e) => {
+      const handleSubmit = async (e: any) => {
         e.preventDefault();
     
         const url = 'https://chemotronix.us21.list-manage.com/subscribe/post-json?u=82d230ec4c16d214f3f9d2d45&amp;id=d38ba1704e&amp;f_id=00b6f4e6f0';
