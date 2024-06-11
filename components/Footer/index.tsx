@@ -1,17 +1,67 @@
+'use client'
+import { useState } from 'react';
+import jsonp from 'jsonp';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 const Footer = () => {
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+    
+         if (name === 'FNAME' ) {
+            const letterRegex = /^[A-Za-z\s]+$/;
+            if (!value.match(letterRegex) && value !== '') {
+              return;
+            }
+          }
+    
+          setName(value);
+      };
+
+
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+        const url = 'https://chemotronix.us21.list-manage.com/subscribe/post-json?u=82d230ec4c16d214f3f9d2d45&amp;id=d38ba1704e&amp;f_id=00b6f4e6f0';
+        jsonp(`${url}&EMAIL=${email}&FNAME=${name}`, { param: 'c' }, (_, data) => {
+            const { msg, result } = data
+            // do something with response
+            alert(msg);
+        });
+    
+    
+        // You can reset the email input field after submission
+        setEmail('');
+        setName('');
+      };
+
     return (
         <footer className="absolute h-screen w-full pt-10 px-10 gap-[10%] bg-[#01431D] flex flex-col lg:flex-row flex-wrap ">
             <div className="lg:w-2/5">
                 <h1 className="text-[#FFFED4] mb-5 text-3xl">Stay in the loop with the cool things we are doing.</h1>
                 <p className="text-white">Subscribe to our newsletter</p>
                 <div className="relative">
-                    <input type="text" placeholder="johndoe@gmail.com" className="mt-5 w-full text-white bg-transparent p-3 pr-12 rounded-full border border-[#FFFED4] outline-none" />
-                    <FontAwesomeIcon icon={faArrowRight} className="text-[#FFFED4] text-2xl absolute top-5 right-5 bottom-0  m-auto mr-3" />
+                    <input 
+                        type="email"  
+                        name="EMAIL"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                        id='mce-EMAIL'
+                        placeholder="johndoe@gmail.com" 
+                        className="mt-5 w-full text-white bg-transparent p-3 pr-12 rounded-full border border-[#FFFED4] outline-none" 
+                    />
+                    <FontAwesomeIcon 
+                        icon={faArrowRight} 
+                        onClick={handleSubmit}
+                        className="text-[#FFFED4] text-2xl hover:translate-x-1 absolute top-5 right-5 bottom-0  m-auto mr-3" 
+                    />
                 </div>
             </div>
             <div className="lg:w-2/5">
